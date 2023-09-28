@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Waypoint47とは？</title>
+<style>
+body{
+margin:0px;
+}
+h1{
+margin: 0 auto;
+background:#019ac6;
+color: #fff;
+}
+.header{
+margin: 0 auto;
+padding: 0;
+width: 970px
+}
+
+<!--img:nth-of-type(1){
+width: 34%;
+height: auto;
+}-->
+.header .Topimage .kaigyou{
+display: flex;
+justify-content:flex-start;
+}
+.header .Topimage .kaigyou .side{
+display: flex;
+flex-direction:column;
+}
+
+
+
+
+.header .Topimage .kaigyou .side a:nth-of-type(1){
+vertical-align: top;
+font-size:25px;
+color: #fff;
+background:#019ac6;
+}
+.header .Topimage .kaigyou .side a:nth-of-type(2){
+vertical-align: top;
+}
+
+.space{
+width: 100%;
+height: 100px;
+}
+
+
+
+/*ベース*/
+.toggle {
+	display: none;
+}
+.Label {		/*タイトル*/
+	padding: 1em;
+	display: block;
+	color: #fff;
+	background:#019ac6;
+}
+.Label::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,
+.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.content {		/*本文*/
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+}
+.toggle:checked + .Label + .content {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
+
+
+</style>
+</head>
+<body>
+<h1>ふりー百四科辞典</h1>
+<section class="header">
+		<div class="Topimage">
+			<div class="kaigyou">
+				<!--<img src="img1.png" alt="トップ画像">-->
+				<div class="side">
+					<a>Waypoint47とは？</a>
+					<a>Waypoint47(ウェイポイントフォーティーセブン)とは日本のアイドルグループ。</a>
+				</div>
+			</div>
+		</div>
+		<p class="space">   </p>
+		<input id="block-01" type="checkbox" class="toggle">
+		<label class="Label" for="block-01">概要</label>
+		<div class="content">
+			<p>・グループ名の由来は「Waypoint(ウェイポイント)」という航空路におけるチェックポイントのようなもの。グループ名にはファンの人もインスピレーションを受けて羽ばたいて欲しいという願いが込められている。WaypointのアイドルがそのままWaypoint、ファンが飛行機みたいなイメージ。サイリウムカラーが飛行機のライトと同じで右に緑、左に赤(左翼がアカと覚えよう！)なのもその表れなのだが、それだけではなく日常でよく目にする色(信号等と被る)にすることにより事あるごとに思い出させるための心理トリックなのでは？という説も。
+			<br>
+			<br>・運営は「合同会社雷雨」グループの総合プロデューサー、運営会社社長はいずれも霧雨魔理沙氏。
+			<br>
+			<br>・また、航空路における「Waypoint」は「47」都道府県に散在し、個性的な名前が多いのは航空関係者や航空ファンによく知られているため、メンバーが個性的(霧雨氏が様々な創作世界から連れてきた人外が多数在籍)なのはそれのメタファーであるというのが公式の説明であるのだが、一方でグループ名に２桁数字を冠する２つの某有名人気アイドルグループがカバーし得ない隙間(二次元、人外等の需要)狙いなのでは？という説も。(公式は否定)
+			</p>
+		</div>
+		<input id="block-02" type="checkbox" class="toggle">
+		<label class="Label" for="block-02">コンセプト</label>
+		<div class="content">
+			<p>・グループコンセプトは「前向きな通過点―――そのときそのときを楽しめ」これについて霧雨魔理沙氏は次のように語っている。
+			<br>
+			<br>アイドルにハマるのは通過点です。しかしそれはアイドルファンに偏見を持つ人たちが口にする「アイドルファンは大人になれば卒業するもの」みたいな後ろ向きな意味ではありません。他の数あるコンテンツ同様、老若男女問わずハマって欲しい、そして前向きな刺激を受けて人生を好転させる…なんて言うのは大げさでおこがましいですが「アイドルにハマること」が前向きな方向に向かう通過点になったらいいなと考えています。
+			<br>
+			<br>なお、同氏は魔女が異端者として差別される空気がうっすらと残る地域で育ち、不登校を経験。そのときアイドルに感化されて一念発起したことで人生が前向きな方向に進んだという体験をしている。
+			<br>
+			<br>「そのときそのときを楽しめ」については
+			<br>
+			<br>アイドルにとってもアイドルは通過点なんです。やめちゃうかもしれないし卒業しちゃうかもしれない、だから活動できるうちは楽しんで今後の糧にしてほしいし、ファンの方には「オタク」の諺にあるように推しは推せるうち推してあげてほしい。それはうちのアイドルではなくても一緒です。私はアイドルに限らず、ファンに前向きな刺激を与える人達(芸能人やYoutuber・Vtuber等)が好きです。
+			<br>
+			<br>・メンバーがSNSでよく使う「Goodday！」は飛行機の通信で使われる定型句でもあり、空というグループイメージにもグループコンセプトにもこれ以上ないくらいベストマッチなので同氏の指示で使うようになったという。
+			</p>
+		</div>
+		<input id="block-03" type="checkbox" class="toggle">
+		<label class="Label" for="block-03">問題点・都市伝説</label>
+		<div class="content">
+			<p>・コンセプトに関しては内外問わず支持されている一方、飛行属性持ちメンバーという通常のアイドルグループでは存在しないトラブル要因を抱えているためネットでは「地雷系アイドルならぬミサイル系アイドル」「急降下グループ」「お騒がせアイドル(物理)」「航空法違反(なお、航空法適用外の人外が大半だからそれは違うと霧雨氏は冗談交じりに語っている)」「空飛ぶ公然わいせつ罪」等と軽口を叩かれている。
+			<br>・最後に関してはスカートで飛んでいるといろいろ見えてしまうのでは？といった憶測から生まれた都市伝説で事実とは異なる。メンバーのスカートはアニメキャラのそれ同様物理法則を無視しているため、少なくとも全年齢向けメディアという環境下では捲れることはない。また、見える角度で撮影すると謎の閃光に妨害される(※ただしR18二次創作は除く)という都市伝説もあるが、これも真偽に言及＝犯罪告白になるため真偽は不明。
+			</p>
+		</div>
+		<input id="block-04" type="checkbox" class="toggle">
+		<label class="Label" for="block-04">メンバー</label>
+		<div class="content">
+			<p>採用期ごとの特徴は下記の通り。人外メンバーは霧雨氏が様々な創作世界から連れてきているらしい。
+			<br>
+			<br>一期生
+<br>・全員が飛行属性持ち。また、疫病の流行もあり「自飛」通勤できるメンバーは感染対策という観点からも都合がよかったとのこと。
+<br>
+<br>二期生
+<br>・あとから入る飛行属性を持たない三期採用を見越し、ほうきやその他乗り物で飛ぶ飛行属性持ちが多い。霧雨氏いわく魔女がマジョリティ！なお、あとから採用された三期いわく、ほうきでの移動はロードバイクでのロングライド並に大変、LCCが天国に思えるとのこと。
+<br>
+<br>三期生
+<br>・人間採用枠。グループイメージの大半を空が占めているため、空に興味があるグループコンセプトに合ったメンバーを集めたかったとのこと。計画通りその条件を満たすメンバーは集まった一方、一期、二期の人気メンバーとほうきその他で２人乗りしたいといった不純な動機で応募した淑女もいたらしいが、霧雨氏いわくそれはそれで需要があるからヨシ！とのこと。後者は飛行属性こそないもののいろんな意味でぶっ飛んでいる貴重な戦力。
+<br>
+<br>四期生
+<br>・他と比べ演技・歌唱レベルが異様に高い。某有名劇団をもじったミームを作りたかったのではと言われている。(公式は否定)
+<br>
+<br>五期生
+<br>・2022～2023に不定期採用。先日(記事執筆時2023.09)崩壊した旧ツイ〇タランドからの亡命者により個性あふれるメンバーが大量補充された。
+			</p>
+		</div>
+	</section>
+
+</body>
+</html>
